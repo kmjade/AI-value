@@ -2,4 +2,5 @@
 # Intellij IDEA
 /.idea/
 # Obsidian
-/.obsidian/
+!/.obsidian/
+
