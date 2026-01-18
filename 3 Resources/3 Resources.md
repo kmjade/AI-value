@@ -1,7 +1,7 @@
 ---
 aliases:
   - 资源
-para: Resources
+para: resources
 ---
 
 > [!NOTE] 

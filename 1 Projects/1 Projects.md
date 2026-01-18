@@ -14,7 +14,7 @@ tags:
 ```dataview
 list without id length(rows.file.name)
 from "1 Projects"
-where pare = "project"
+where para = "projects"
 group by 1
 ```
 
