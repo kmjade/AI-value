@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "5 Zettels/日记-闪念.md",
+                "file": "5 Zettels/成长追踪-闪念.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "日记-闪念"
+              "title": "成长追踪-闪念"
             }
           }
         ]
@@ -33,12 +33,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "0 Personals/使用指南.md",
+                "file": "5 Zettels/测试卡片.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "使用指南"
+              "title": "测试卡片"
             }
           }
         ]
@@ -114,7 +114,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "5 Zettels/日记-闪念.md",
+                "file": "5 Zettels/成长追踪-闪念.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -124,7 +124,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "日记-闪念 的反向連結"
+              "title": "成长追踪-闪念 的反向連結"
             }
           },
           {
@@ -217,9 +217,14 @@
   },
   "active": "aa5dae9cb1ba342a",
   "lastOpenFiles": [
-    "_meta/工作流触发器配置.md",
-    "0 Personals/使用指南.md",
+    "5 Zettels/自我管理-闪念.md",
+    "5 Zettels/习惯-闪念.md",
+    "5 Zettels/反思-闪念.md",
+    "5 Zettels/测试卡片.md",
+    "5 Zettels/成长追踪-闪念.md",
     "5 Zettels/日记-闪念.md",
+    "0 Personals/使用指南.md",
+    "_meta/工作流触发器配置.md",
     "_meta/触发器执行日志.md",
     "3 Resources/PARA工作流.md",
     "_meta/_meta.md",
@@ -238,11 +243,6 @@
     "_Template/para/_template-project.md",
     "_Template/para/_template-resource.md",
     "_Cache/Projects-Index.md",
-    "_Template/para/_template-archive.md",
-    "_Cache/Performance-Index.md",
-    "_Cache/Search-Index.md",
-    "_Cache/Resources-Index.md",
-    "0 Personals/📥 00_InBox/5-智能分类.md",
     "_Cache",
     "0 Personals/📥 00_InBox/2-素材",
     "0 Personals/📥 00_InBox/1-链接",
