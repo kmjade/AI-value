@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "1 Projects/测试项目.md",
+                "file": "_Template/para/_template-zettel.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "测试项目"
+              "title": "_template-zettel"
             }
           },
           {
@@ -27,16 +27,15 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_Template/para/_template-project.md",
+                "file": "README Traditional Chinese.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "_template-project"
+              "title": "README Traditional Chinese"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -200,33 +199,34 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "eef4d019c1566e8d",
+  "active": "0e23d61a00128da5",
   "lastOpenFiles": [
+    "_Template/para/_template-resource.md",
+    "_Template/para/_template-project.md",
+    "_Template/para/_template-archive.md",
+    "_Template/para/_template-areas.md",
+    "_Template/模板使用指南.md",
+    "3 Resources/测试资源.md",
+    "2 Areas/测试领域.md",
+    "1 Projects/测试项目.md",
+    "README Traditional Chinese.md",
+    "README Simplified Chinese.md",
+    "AGENTS.md",
     "README.md",
     "CLAUDE.md",
     "5 Zettels/5 Zettels.md",
-    "_Template/para/_template-archive.md",
     "_Template/para/_template-zettel.md",
-    "_Template/para/_template-resource.md",
-    "_Template/para/_template-areas.md",
-    "_Template/para/_template-project.md",
-    "1 Projects/测试项目.md",
     "1 Projects/1 Projects.md",
-    "3 Resources/测试资源.md",
-    "2 Areas/测试领域.md",
     "_Template/para/para.md",
-    "AGENTS.md",
     "2 Areas/2 Areas.md",
     "3 Resources/3 Resources.md",
     "4 Archives/4 Archives.md",
     "0 Personals/📥 00_InBox/📥 00_InBox.md",
     "_meta/_meta.md",
     "_Template/_Template.md",
-    "README Simplified Chinese.md",
     "5 Zettels",
     "0 Personals/📥 00_InBox",
     "0 Personals",
-    "README Traditional Chinese.md",
     "4 Archives",
     "3 Resources",
     "2 Areas",

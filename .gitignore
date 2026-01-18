@@ -2,7 +2,7 @@
 # Intellij IDEA
 /.idea/
 
-/.claude/
+!/.claude/
 
 # Obsidian
 !/.obsidian/
