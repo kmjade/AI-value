@@ -40,12 +40,12 @@ SORT file.mtime desc
 
 ### 按内容关键词 (需要内容搜索功能)
 ```dataview
-TABLE 
+TABLE
   file.folder as "类别"
 FROM ""
-WHERE para 
+WHERE para
   AND file.path != this.file.path
-  AND (lower(string(file.content)) contains lower("搜索内容"))
+  AND contains(lower(string(file.content)), lower("搜索内容"))
 SORT file.mtime desc
 ```
 
@@ -53,29 +53,32 @@ SORT file.mtime desc
 
 ### 搜索项目
 ```dataview
-// 搜索项目相关内容
+TABLE file.link as "项目", file.mtime as "更新时间"
 FROM "1 Projects"
-WHERE para = "project" 
-  AND (contains(lower(file.name), "搜索词") 
+WHERE para = "project"
+  AND (contains(lower(file.name), "搜索词")
        OR contains(lower(string(title)), "搜索词"))
+SORT file.mtime desc
 ```
 
 ### 搜索领域
 ```dataview
-// 搜索领域相关内容  
+TABLE file.link as "领域", file.mtime as "更新时间"
 FROM "2 Areas"
 WHERE para = "area"
   AND (contains(lower(file.name), "搜索词")
        OR contains(lower(string(title)), "搜索词"))
+SORT file.mtime desc
 ```
 
 ### 搜索资源
 ```dataview
-// 搜索资源相关内容
+TABLE file.link as "资源", file.mtime as "更新时间"
 FROM "3 Resources"
 WHERE para = "resources"
   AND (contains(lower(file.name), "搜索词")
        OR contains(lower(string(title)), "搜索词"))
+SORT file.mtime desc
 ```
 
 ## 🏷️ 标签索引

@@ -40,7 +40,7 @@ LIMIT 10
 TABLE file.name, file.folder
 FROM ""
 WHERE para AND file.name != this.file.name
-  AND (lower(string(file.content)) contains lower("关键词"))
+  AND contains(lower(string(file.content)), lower("关键词"))
 SORT file.mtime desc
 ```
 
@@ -89,7 +89,7 @@ SORT by-when asc
 ### 1. 不支持的语法
 ```dataview
 # ❌ 错误：不支持直接内容搜索
-WHERE file.content contains "搜索内容"
+WHERE contains(file.content, "搜索内容")
 
 # ❌ 错误：不支持JavaScript注释
 // 这是一个注释
@@ -100,8 +100,8 @@ WHERE file.name.includes("项目")
 
 ### 2. 正确的语法
 ```dataview
-# ✅ 正确：使用string()和lower()函数
-WHERE lower(string(file.content)) contains lower("搜索内容")
+# ✅ 正确：使用contains()函数包装
+WHERE contains(lower(string(file.content)), lower("搜索内容"))
 
 # ✅ 正确：使用Dataview注释
 -- 这是一个注释

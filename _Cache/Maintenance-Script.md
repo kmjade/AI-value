@@ -72,12 +72,12 @@ SORT file.ctime desc
 
 ### 3. 重复内容检查
 ```dataview
-TABLE 
+TABLE
+  title as "标题",
   length(rows) as "重复数量"
 FROM ""
 WHERE para AND file.name != this.file.name
 GROUP BY title
-HAVING length(rows) > 1
 SORT length(rows) desc
 ```
 
