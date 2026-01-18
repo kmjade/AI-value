@@ -45,7 +45,7 @@ WHERE file.name != "1 Projects"
   AND para = "project"
   AND (status = "active" OR status = "in-progress")
   AND (by-when = null OR by-when >= date(today))
-SORT priority desc, by-when asc NULLS LAST
+SORT priority desc, by-when asc
 ```
 
 ## 🎯 按优先级分组
@@ -84,7 +84,7 @@ SORT domain
 
 ```dataview
 TABLE
-  days(by-when, date(today)) as "剩余天数",
+  dur(by-when - date(today)).days as "剩余天数",
   priority as "优先级"
 FROM "1 Projects"
 WHERE para = "project"

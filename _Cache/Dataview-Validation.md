@@ -55,7 +55,7 @@ WHERE para = "project"
   AND file.name != this.file.name
   AND (status = "active" OR status = "in-progress")
   AND priority = "high"
-SORT priority desc, by-when asc NULLS LAST
+SORT priority desc, by-when asc
 ```
 
 ### 分组统计语法
@@ -75,7 +75,7 @@ LIMIT 10
 ### 日期计算语法
 ```dataview
 TABLE
-  days(by-when, date(today)) as "剩余天数",
+  dur(by-when - date(today)).days as "剩余天数",
   priority as "优先级"
 FROM "1 Projects"
 WHERE para = "project"
@@ -87,7 +87,23 @@ SORT by-when asc
 
 ## ⚠️ 常见语法错误
 
-### 1. 不支持的语法
+### 4. Null 值处理错误
+
+**问题：** 对 null 值进行算术运算导致 "null * number" 错误
+```dataview
+# ❌ 错误：可能在 null 值上进行运算
+FROM ""
+WHERE para
+  AND dur(date(today) - by-when).days < 7
+
+# ✅ 正确：在运算前确保字段不为 null
+FROM "1 Projects"
+WHERE para = "project"
+  AND by-when != null
+  AND dur(date(today) - by-when).days < 7
+```
+
+### 5. 不支持的语法
 ```dataview
 # ❌ 错误：不支持直接内容搜索
 WHERE contains(file.content, "搜索内容")
@@ -99,7 +115,7 @@ WHERE contains(file.content, "搜索内容")
 WHERE file.name.includes("项目")
 ```
 
-### 2. 正确的语法
+### 6. 正确的语法
 ```dataview
 # ✅ 正确：使用contains()函数包装
 WHERE contains(lower(string(file.content)), lower("搜索内容"))
@@ -109,6 +125,9 @@ WHERE contains(lower(string(file.content)), lower("搜索内容"))
 
 # ✅ 正确：使用contains()函数
 WHERE contains(lower(file.name), "项目")
+
+# ✅ 正确：null 值安全处理
+WHERE field != null AND dur(date(today) - field).days > 7
 ```
 
 ## 🔍 语法检查清单
@@ -126,6 +145,7 @@ WHERE contains(lower(file.name), "项目")
 3. **字符串比较** - 使用 `lower()` 函数进行大小写不敏感比较
 4. **条件组合** - 使用正确的逻辑运算符
 5. **分组统计** - 使用正确的GROUP BY语法
+6. **null 值处理** - 在算术运算前检查字段是否为 null
 
 ## 🚀 性能优化建议
 

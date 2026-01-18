@@ -85,7 +85,7 @@ SORT length(rows) desc
 ```dataview
 TABLE
   by-when as "截止日期",
-  days(date(today), by-when) as "逾期天数"
+  dur(date(today) - by-when).days as "逾期天数"
 FROM "1 Projects"
 WHERE para = "project"
   AND status = "active"
@@ -108,10 +108,10 @@ LIMIT 1
 
 ### 2. 缓存效率检查
 ```dataview
-TABLE 
+TABLE
   file.name as "缓存文件",
   file.mtime as "最后更新",
-  days(date(today), file.mtime) as "更新天数"
+  dur(date(today) - file.mtime).days as "更新天数"
 FROM "_Cache"
 WHERE file.mtime < date(today) - dur(7 days)
 SORT file.mtime asc
@@ -119,7 +119,7 @@ SORT file.mtime asc
 
 ### 3. 数据库大小监控
 ```dataview
-TABLE 
+TABLE
   file.folder as "类别",
   length(rows) as "文件数量",
   round(average(rows.file.size), 0) as "平均大小"
@@ -180,11 +180,12 @@ SORT length(rows) desc
 TABLE
   "🚨 Urgent" as "紧急程度",
   file.name as "文件"
-FROM ""
-WHERE para AND file.name != this.file.name
-  AND (days(date(today), by-when) < 3 OR length(file.inlinks) = 0)
+FROM "1 Projects"
+WHERE para = "project"
+  AND (status = "active" OR status = "in-progress")
   AND by-when != null
-SORT file.mtime desc
+  AND dur(date(today) - by-when).days < 3
+SORT by-when asc
 ```
 
 ### 需要本周处理
@@ -192,11 +193,12 @@ SORT file.mtime desc
 TABLE
   "⚠️ This Week" as "本周处理",
   file.name as "文件"
-FROM ""
-WHERE para AND file.name != this.file.name
-  AND (days(date(today), by-when) < 7 OR file.mtime < date(today) - dur(30 days))
+FROM "1 Projects"
+WHERE para = "project"
+  AND (status = "active" OR status = "in-progress")
   AND by-when != null
-SORT file.mtime desc
+  AND dur(date(today) - by-when).days < 7
+SORT by-when asc
 ```
 
 ## 📈 性能报告

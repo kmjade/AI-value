@@ -54,7 +54,7 @@ TABLE
 FROM "1 Projects"
 WHERE para = "project"
   AND (status = "active" OR status = "in-progress")
-SORT priority desc, by-when asc NULLS LAST
+SORT priority desc, by-when asc
 LIMIT 5
 ```
 
@@ -74,9 +74,8 @@ WHERE file.name = "1 Projects"
 TABLE
   file.name as "缓存文件",
   file.mtime as "更新时间",
-  days(date(today), file.mtime) as "更新天数"
+  dur(date(today) - file.mtime).days as "更新天数"
 FROM "_Cache"
-WHERE file.mtime != null
 SORT file.mtime desc
 ```
 

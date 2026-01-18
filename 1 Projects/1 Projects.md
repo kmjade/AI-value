@@ -27,7 +27,7 @@ GROUP BY domain
 SORT domain
 ```
 
-```dataview 
+```dataview
 TABLE start_date as "开始日期", by-when as "截止日期", status as "状态"
 FROM "1 Projects"
 WHERE file.name != "1 Projects" AND para = "project"
