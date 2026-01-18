@@ -2,6 +2,7 @@
 title: "{{title}}"
 aliases:
   - 项目
+  - 專案
 para: projects
 created: <% tp.date.now("YYYY-MM-DD") %>
 start_date: <% tp.date.now("YYYY-MM-DD") %>
