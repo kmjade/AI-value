@@ -10,14 +10,14 @@ para: areas
 ## No. of Areas [[领域]] 🧠
 ```dataview
 list without id length(rows.file.name)
-from "2 Areas"
-where para = "area" AND file.name != this.file.name
-group by 1
+FROM "2 Areas"
+WHERE para = "area" AND file.name != this.file.name
+GROUP BY 1
 ```
 
 ```dataview
 TABLE WITHOUT ID file.link as "Area", length(file.inlinks) as "No. of Linked Files"
-FROM "1 Projects" or "2 Areas" or "3 Resources"
+FROM "2 Areas"
 WHERE para = "area" AND file.name != this.file.name
 SORT length(file.inlinks) desc
 ```

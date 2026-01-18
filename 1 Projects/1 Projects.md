@@ -14,21 +14,23 @@ tags:
 ```dataview
 list without id length(rows.file.name)
 from "1 Projects"
-where para = "projects"
-group by 1
+where para = "project" AND file.name != this.file.name
+GROUP BY 1
 ```
 
 ```dataview
-Table without id domain as "Area", sort(rows.file.link) as Projects
+TABLE without id domain as "Area", rows.file.link as "Projects"
 FROM "1 Projects"
-WHERE file.name != "1 Projects" and contains(para, "project")
+WHERE file.name != "1 Projects" AND para = "project" AND domain
 FLATTEN domain
 GROUP BY domain
 SORT domain
 ```
 
 ```dataview 
-table start_date, by-when, status from "1 Projects"
+TABLE start_date as "开始日期", by-when as "截止日期", status as "状态"
+FROM "1 Projects"
+WHERE file.name != "1 Projects" AND para = "project"
 SORT file.mtime desc
 LIMIT 10
 ```
