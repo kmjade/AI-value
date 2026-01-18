@@ -3,7 +3,7 @@
 /.idea/
 # Obsidian
 !/.obsidian/
+
 !/.obsidian/plugins/
 
-
-
+/.obsidian/plugins/claudian/
