@@ -19,7 +19,7 @@
 | 2 Areas | X | |
 | 3 Resources | X | |
 | 4 Archives | X | |
-| 6 Zettels  | X | |
+| 5 Zettels  | X | |
 
 📁 进行中的项目 (1 Projects)：
 - 公众号
