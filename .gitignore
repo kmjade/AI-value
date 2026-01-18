@@ -1,6 +1,9 @@
 
 # Intellij IDEA
 /.idea/
+
+/.claude/
+
 # Obsidian
 !/.obsidian/
 /workspace.json
@@ -9,3 +12,5 @@
 
 /.obsidian/plugins/claudian/
 /.obsidian/plugins/folder-notes/
+
+
