@@ -33,12 +33,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "5 Zettels/测试卡片.md",
+                "file": "1 Projects/21天日记挑战.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "测试卡片"
+              "title": "21天日记挑战"
             }
           }
         ]
@@ -114,7 +114,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "5 Zettels/成长追踪-闪念.md",
+                "file": "1 Projects/21天日记挑战.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -124,7 +124,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "成长追踪-闪念 的反向連結"
+              "title": "21天日记挑战 的反向連結"
             }
           },
           {
@@ -215,13 +215,22 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "aa5dae9cb1ba342a",
+  "active": "29f8713c4b926212",
   "lastOpenFiles": [
+    "3 Resources/写作技巧/日记方法.md",
+    "3 Resources/写作技巧/自我管理方法.md",
+    "3 Resources/写作技巧/成长追踪方法.md",
+    "2 Areas/个人成长/习惯养成.md",
+    "2 Areas/个人成长/日记习惯.md",
+    "1 Projects/21天日记挑战.md",
+    "2 Areas/个人成长/定期反思.md",
+    "5 Zettels/测试卡片.md",
+    "5 Zettels/成长追踪-闪念.md",
+    "3 Resources/写作技巧",
+    "2 Areas/个人成长",
     "5 Zettels/自我管理-闪念.md",
     "5 Zettels/习惯-闪念.md",
     "5 Zettels/反思-闪念.md",
-    "5 Zettels/测试卡片.md",
-    "5 Zettels/成长追踪-闪念.md",
     "5 Zettels/日记-闪念.md",
     "0 Personals/使用指南.md",
     "_meta/工作流触发器配置.md",
@@ -236,13 +245,6 @@
     "3 Resources/数据分析仪表板.md",
     "3 Resources/批量操作系统.md",
     "3 Resources/归档触发系统.md",
-    "3 Resources/分类标签系统.md",
-    "_Template/para/_template-zettel.md",
-    "0 Personals/📥 00_InBox/4-搜索功能.md",
-    "0 Personals/📥 00_InBox/1-工作流.md",
-    "_Template/para/_template-project.md",
-    "_Template/para/_template-resource.md",
-    "_Cache/Projects-Index.md",
     "_Cache",
     "0 Personals/📥 00_InBox/2-素材",
     "0 Personals/📥 00_InBox/1-链接",
@@ -250,8 +252,6 @@
     "_meta",
     "_Template/para",
     "_Template",
-    "6 Zettels",
-    "5 Zettels",
-    "0 Personals/📥 00_InBox"
+    "6 Zettels"
   ]
 }

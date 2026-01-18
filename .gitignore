@@ -9,7 +9,7 @@
 /.claude/skills/
 
 # Obsidian
-!/.obsidian/
+/.obsidian/
 /workspace.json
 
 !/.obsidian/plugins/
