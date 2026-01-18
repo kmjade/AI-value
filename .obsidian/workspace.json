@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "1 Projects/1 Projects.md",
+                "file": "_Template/para/_template-archive.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "1 Projects"
+              "title": "_template-archive"
             }
           }
         ]
@@ -78,7 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 222.5
   },
   "right": {
     "id": "13055df035739e59",
@@ -184,23 +184,27 @@
       "claudian:Open Claudian": false
     }
   },
-  "active": "0e23d61a00128da5",
+  "active": "6d97916435a7249c",
   "lastOpenFiles": [
+    "_Template/para/_template-resource.md",
+    "_Template/para/_template-areas.md",
     "2 Areas/2 Areas.md",
-    "3 Resources/3 Resources.md",
+    "1 Projects/1 Projects.md",
+    "_Template/para/_template-project.md",
+    "_Template/para/para.md",
+    "_Template/_Template.md",
+    "_Template/para",
+    "_Template",
     "4 Archives/4 Archives.md",
+    "3 Resources/3 Resources.md",
+    "README Traditional Chinese.md",
     "README Simplified Chinese.md",
-    "README.md",
     "CLAUDE.md",
     "AGENTS.md",
-    "README Traditional Chinese.md",
-    "3 Resources/_template.md",
-    "1 Projects/1 Projects.md",
+    "README.md",
     "PARA/README.md",
     "README.md~",
-    "4 Archives/_template.md",
-    "2 Areas/_template.md",
-    "1 Projects/_template.md",
+    "_Template/para/_template-archive.md",
     "3 Resources",
     "1 Projects",
     "2 Areas",
