@@ -18,7 +18,7 @@ tags:
 > 有明确目标和截止日期的短期努力
 
 ## 项目目标 / Project Goal
-
+---
 > 描述这个项目的目标和期望成果
 
 > [!info] SMART 原则
@@ -29,6 +29,7 @@ tags:
 > - **T**ime-bound - 有时限
 
 ## 基本信息 / Basic Information
+---
 
 | 项目 | 内容 |
 |------|------|
@@ -39,7 +40,7 @@ tags:
 | 关联领域 | [[Area Name]] |
 
 ## 任务列表 / Tasks
-
+---
 > [!info] 推荐使用 Tasks 插件
 > 安装 Obsidian Tasks 插件后，下方任务格式会被自动识别和管理
 
@@ -67,13 +68,13 @@ tags:
 
 ```tasks
 not done
-path includes {{项目文件名}}
+path includes this file
 sort by due
 sort by priority
 ```
 
-> [!warning] 使用前修改
-> 将 `{{项目文件名}}` 替换为实际项目文件名
+> [!info] 查询说明
+> `path includes this file` 会自动包含当前文件中的任务，无需手动替换文件名
 
 > [!warning] Dataview 限制说明
 > Dataview 对内联任务（- [ ]）的支持有限且有兼容性问题，建议使用 Tasks 插件进行任务管理。

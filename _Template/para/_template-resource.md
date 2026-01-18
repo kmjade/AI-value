@@ -27,6 +27,7 @@ tags:
 > 持续感兴趣的话题和学习材料
 
 ## 基本信息 / Basic Information
+---
 
 | 项目 | 内容 |
 |------|------|
@@ -38,7 +39,7 @@ tags:
 | 关联领域 | [[Area Name]] |
 
 ## 资源描述 / Resource Description
-
+---
 > 描述这个资源的内容、来源和用途
 
 > [!info] 资源类型说明
@@ -50,7 +51,7 @@ tags:
 > - **tool** - 工具、软件
 
 ## 来源信息 / Source Information
-
+---
 ### 原文链接
 - [资源标题](https://example.com)
 - [备用链接](https://example.com)
@@ -65,7 +66,7 @@ tags:
 - [[Related Resource 2]]
 
 ## 关键信息 / Key Points
-
+---
 > 提取和总结资源中的关键信息
 
 ### 核心概念
@@ -85,7 +86,7 @@ tags:
 | | | |
 
 ## 个人理解 / Personal Understanding
-
+---
 > 记录你对这个资源的个人理解和见解
 
 ### 主要收获
@@ -98,7 +99,7 @@ tags:
 > 阅读过程中产生的疑问
 
 ## 应用场景 / Applications
-
+---
 > 这个资源可以应用在哪些场景
 
 ### 可应用的场景
@@ -110,7 +111,7 @@ tags:
 - [ ] 实践 2
 
 ## 笔记与摘录 / Notes & Excerpts
-
+---
 > 记录重要摘录和笔记
 
 ### 摘录
@@ -127,7 +128,7 @@ tags:
 | | | |
 
 ## 相关链接 / Related Links
-
+---
 ### 内部链接
 - [[Note 1]]
 - [[Note 2]]
@@ -138,7 +139,7 @@ tags:
 - [扩展阅读](url)
 
 ## 标签分类 / Tags
-
+---
 ### 按主题分类
 - #topic1
 - #topic2

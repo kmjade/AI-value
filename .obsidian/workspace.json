@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_Cache/Projects-Index.md",
+                "file": "5 Zettels/日记-闪念.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Projects-Index"
+              "title": "日记-闪念"
             }
           }
         ]
@@ -33,30 +33,15 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_Cache/Projects-Index.md",
+                "file": "0 Personals/使用指南.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Projects-Index"
-            }
-          },
-          {
-            "id": "e15239933a59370b",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "_Cache/Projects-Index.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Projects-Index"
+              "title": "使用指南"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -129,7 +114,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_Cache/Projects-Index.md",
+                "file": "5 Zettels/日记-闪念.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -139,7 +124,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Projects-Index 的反向連結"
+              "title": "日记-闪念 的反向連結"
             }
           },
           {
@@ -232,32 +217,32 @@
   },
   "active": "aa5dae9cb1ba342a",
   "lastOpenFiles": [
-    "_Cache/Performance-Index.md",
+    "_meta/工作流触发器配置.md",
+    "0 Personals/使用指南.md",
+    "5 Zettels/日记-闪念.md",
+    "_meta/触发器执行日志.md",
+    "3 Resources/PARA工作流.md",
+    "_meta/_meta.md",
+    "3 Resources/测试资源.md",
+    "_Template/para/_template-area.md",
+    "3 Resources/智能分类系统.md",
+    "3 Resources/提醒系统.md",
+    "3 Resources/搜索功能系统.md",
+    "3 Resources/数据分析仪表板.md",
+    "3 Resources/批量操作系统.md",
+    "3 Resources/归档触发系统.md",
+    "3 Resources/分类标签系统.md",
+    "_Template/para/_template-zettel.md",
+    "0 Personals/📥 00_InBox/4-搜索功能.md",
+    "0 Personals/📥 00_InBox/1-工作流.md",
+    "_Template/para/_template-project.md",
+    "_Template/para/_template-resource.md",
     "_Cache/Projects-Index.md",
+    "_Template/para/_template-archive.md",
+    "_Cache/Performance-Index.md",
     "_Cache/Search-Index.md",
     "_Cache/Resources-Index.md",
     "0 Personals/📥 00_InBox/5-智能分类.md",
-    "_Cache/PARA-Optimized-Dashboard.md",
-    "_Cache/PARA-Overview.md",
-    "_Cache/Dataview-Validation.md",
-    "_Cache/Metadata-Standards.md",
-    "_Cache/Maintenance-Script.md",
-    "0 Personals/📥 00_InBox/0-待办/0-待办.md",
-    "4 Archives/测试归档.md",
-    "5 Zettels/测试卡片.md",
-    "5 Zettels/5 Zettels.md",
-    "4 Archives/4 Archives.md",
-    "3 Resources/测试资源.md",
-    "2 Areas/测试领域.md",
-    "2 Areas/2 Areas.md",
-    "1 Projects/测试项目.md",
-    "1 Projects/1 Projects.md",
-    "_Cache/Areas-Index.md",
-    "0 Personals/📥 00_InBox/8-提醒系统.md",
-    "0 Personals/📥 00_InBox/7-批量操作.md",
-    "0 Personals/📥 00_InBox/6-数据分析.md",
-    "0 Personals/📥 00_InBox/4-搜索功能.md",
-    "0 Personals/📥 00_InBox/3-归档触发.md",
     "_Cache",
     "0 Personals/📥 00_InBox/2-素材",
     "0 Personals/📥 00_InBox/1-链接",

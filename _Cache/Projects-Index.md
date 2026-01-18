@@ -34,7 +34,7 @@ FROM "1 Projects"
 WHERE file.name != "1 Projects"
   AND para = "project"
   AND (status = "active" OR status = "in-progress")
-SORT priority desc, by-when asc NULLS LAST
+SORT priority desc, by-when asc
 ```
 
 ## 📋 按领域分组
