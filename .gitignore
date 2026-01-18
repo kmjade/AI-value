@@ -3,6 +3,7 @@
 /.idea/
 # Obsidian
 !/.obsidian/
+/workspace.json
 
 !/.obsidian/plugins/
 
