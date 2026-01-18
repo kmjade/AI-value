@@ -25,16 +25,16 @@ GROUP BY true
 ## 🚀 活跃项目 (Active)
 
 ```dataview
-TABLE 
-  start_date as "Start", 
-  by-when as "Deadline", 
+TABLE
+  start_date as "Start",
+  by-when as "Deadline",
   priority as "Priority",
   status as "Status"
 FROM "1 Projects"
-WHERE file.name != "1 Projects" 
-  AND para = "project" 
+WHERE file.name != "1 Projects"
+  AND para = "project"
   AND (status = "active" OR status = "in-progress")
-SORT priority desc, by-when asc
+SORT priority desc, by-when asc NULLS LAST
 ```
 
 ## 📋 按领域分组

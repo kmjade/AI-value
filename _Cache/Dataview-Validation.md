@@ -46,16 +46,16 @@ SORT file.mtime desc
 
 ### 条件组合语法
 ```dataview
-TABLE 
+TABLE
   start_date as "开始日期",
   by-when as "截止日期",
   priority as "优先级"
 FROM "1 Projects"
-WHERE para = "project" 
+WHERE para = "project"
   AND file.name != this.file.name
   AND (status = "active" OR status = "in-progress")
   AND priority = "high"
-SORT priority desc, by-when asc
+SORT priority desc, by-when asc NULLS LAST
 ```
 
 ### 分组统计语法
@@ -74,12 +74,13 @@ LIMIT 10
 
 ### 日期计算语法
 ```dataview
-TABLE 
+TABLE
   days(by-when, date(today)) as "剩余天数",
   priority as "优先级"
 FROM "1 Projects"
 WHERE para = "project"
   AND status = "active"
+  AND by-when != null
   AND by-when >= date(today)
 SORT by-when asc
 ```

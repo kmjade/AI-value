@@ -35,17 +35,17 @@ last_updated: 2026-01-19
 ## 🚀 活跃项目
 
 ```dataview
-TABLE 
+TABLE
   by-when as "截止日期",
   priority as "优先级",
   domain as "所属领域",
   file.mtime as "最后更新"
 FROM "1 Projects"
-WHERE file.name != "1 Projects" 
-  AND para = "project" 
+WHERE file.name != "1 Projects"
+  AND para = "project"
   AND (status = "active" OR status = "in-progress")
-  AND by-when >= date(today)
-SORT priority desc, by-when asc
+  AND (by-when = null OR by-when >= date(today))
+SORT priority desc, by-when asc NULLS LAST
 ```
 
 ## 🎯 按优先级分组
@@ -83,12 +83,13 @@ SORT domain
 ## ⏰ 即将到期 (7天内)
 
 ```dataview
-TABLE 
+TABLE
   days(by-when, date(today)) as "剩余天数",
   priority as "优先级"
 FROM "1 Projects"
-WHERE para = "project" 
+WHERE para = "project"
   AND (status = "active" OR status = "in-progress")
+  AND by-when != null
   AND by-when <= date(today) + dur(7 days)
   AND by-when >= date(today)
 SORT by-when asc, priority desc

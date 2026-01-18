@@ -83,12 +83,13 @@ SORT length(rows) desc
 
 ### 4. 过期项目检查
 ```dataview
-TABLE 
+TABLE
   by-when as "截止日期",
   days(date(today), by-when) as "逾期天数"
 FROM "1 Projects"
-WHERE para = "project" 
+WHERE para = "project"
   AND status = "active"
+  AND by-when != null
   AND by-when < date(today)
 SORT by-when asc
 ```
@@ -176,23 +177,25 @@ SORT length(rows) desc
 
 ### 需要立即处理
 ```dataview
-TABLE 
+TABLE
   "🚨 Urgent" as "紧急程度",
   file.name as "文件"
 FROM ""
 WHERE para AND file.name != this.file.name
   AND (days(date(today), by-when) < 3 OR length(file.inlinks) = 0)
+  AND by-when != null
 SORT file.mtime desc
 ```
 
 ### 需要本周处理
 ```dataview
-TABLE 
+TABLE
   "⚠️ This Week" as "本周处理",
   file.name as "文件"
 FROM ""
 WHERE para AND file.name != this.file.name
   AND (days(date(today), by-when) < 7 OR file.mtime < date(today) - dur(30 days))
+  AND by-when != null
 SORT file.mtime desc
 ```
 

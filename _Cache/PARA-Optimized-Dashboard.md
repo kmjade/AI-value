@@ -48,13 +48,13 @@ SORT file.folder
 
 ### 🔥 活跃项目
 ```dataview
-TABLE 
+TABLE
   by-when as "截止日期",
   priority as "优先级"
 FROM "1 Projects"
-WHERE para = "project" 
+WHERE para = "project"
   AND (status = "active" OR status = "in-progress")
-SORT priority desc, by-when asc
+SORT priority desc, by-when asc NULLS LAST
 LIMIT 5
 ```
 
@@ -71,11 +71,12 @@ WHERE file.name = "1 Projects"
 
 ### 缓存状态
 ```dataview
-TABLE 
+TABLE
   file.name as "缓存文件",
   file.mtime as "更新时间",
   days(date(today), file.mtime) as "更新天数"
 FROM "_Cache"
+WHERE file.mtime != null
 SORT file.mtime desc
 ```
 
