@@ -26,9 +26,10 @@ GROUP BY true
 
 ```dataview
 TABLE 
-  length(file.inlinks) as "Linked Files",
-  file.ctime as "Created",
-  file.mtime as "Last Modified"
+  length(file.inlinks) as "链接数量",
+  file.ctime as "创建时间",
+  file.mtime as "最后更新",
+  tags as "标签"
 FROM "2 Areas"
 WHERE file.name != "2 Areas" AND para = "area"
 SORT length(file.inlinks) desc, file.mtime desc

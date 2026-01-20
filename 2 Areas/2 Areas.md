@@ -1,7 +1,7 @@
 ---
 aliases:
   - 领域
-para: areas
+para: area
 ---
 
 > [!abstract] 摘要
