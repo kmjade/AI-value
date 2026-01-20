@@ -26,10 +26,11 @@ GROUP BY true
 
 ```dataview
 TABLE
-  start_date as "Start",
-  by-when as "Deadline",
-  priority as "Priority",
-  status as "Status"
+  start_date as "开始日期",
+  by-when as "截止日期",
+  priority as "优先级",
+  domain as "领域",
+  status as "状态"
 FROM "1 Projects"
 WHERE file.name != "1 Projects"
   AND para = "project"
