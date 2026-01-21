@@ -1,4 +1,5 @@
 ---
+aliases:
 para: area
 sub_pare: <% tp.file.title %>
 ---
