@@ -85,7 +85,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "2 Areas/Claudian/Claudian 命令体系.md",
+                "file": "0 Personals/📥 00_InBox/📥 00_InBox.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -100,7 +100,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Claudian 命令体系"
+              "title": "📥 00_InBox"
             }
           },
           {
@@ -127,37 +127,8 @@
               "title": "README"
             }
           }
-        ]
-      },
-      {
-        "id": "00b72e319e60c6d9",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "944b5e40f674e3bd",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "3 Resources/耳穴疗法知识库/耳診知識.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "耳診知識"
-            }
-          }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -331,44 +302,44 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "6d97916435a7249c",
+  "active": "d3fe74368e306651",
   "lastOpenFiles": [
-    "耳穴診斷知識庫/03-臨床應用/心血管疾病耳穴診斷.md",
+    "0 Personals/Core/✅ Completed Plans/🔁 复盘卡-2026-01-10.md",
+    "0 Personals/Core/✅ Completed Plans/✅ 方案卡 – 收件箱實施方案.md",
+    "0 Personals/Core/✅ Completed Plans/✅ Completed Plans.md",
+    "0 Personals/Core/✅ Completed Plans/✅ 方案卡 – 收件箱.md",
+    "0 Personals/Core/✅ Completed Plans/✅ 方案卡 – 渐进式总结实践.md",
+    "0 Personals/Core/✅ Completed Plans/✅ 方案卡 – 收件箱清理.md",
+    "0 Personals/Core/✅ Completed Concepts/💡 概念：知识网络理论.md",
+    "0 Personals/Core/✅ Completed Concepts/💡 概念：知识复利效应.md",
+    "0 Personals/Core/✅ Completed Concepts/💡 概念：渐进式总结.md",
+    "0 Personals/Core/✅ Completed Concepts/💡 概念卡-卡片笔记法.md",
+    "0 Personals/Core/✅ Completed Concepts/💡 概念卡-收件箱 & PARA 目錄結構.md",
+    "0 Personals/Core/✅ 方案卡 – 清理收件箱.md",
+    "0 Personals/Core/Core.md",
+    "0 Personals/Core/✅ Completed Plans",
+    "0 Personals/Core/✅ Completed Concepts",
+    "0 Personals/Core",
+    "0 Personals/Implement PARA in Obsidian/Implement PARA in Obsidian.md",
+    "0 Personals/Implement PARA in Obsidian",
+    "0 Personals/Write_IP/Write_IP.md",
+    "0 Personals/Write_IP/00_选题池.md",
+    "0 Personals/Write_IP",
+    "0 Personals/🏠 家庭网络架构/内网规划.md",
+    "0 Personals/🏠 家庭网络架构/IP地址分配表.md",
+    "0 Personals/🏠 家庭网络架构/ping 192.168.1.1时超时.md",
+    "0 Personals/🏠 家庭网络架构",
+    "0 Personals/个人知识管理/📁 2026-砍掉3套知识管理系统/📝 00_文章规划.md",
+    "0 Personals/个人知识管理/📁 2026-砍掉3套知识管理系统/📁 2026-砍掉3套知识管理系统.md",
+    "0 Personals/个人知识管理/📓 少记·分层·AI 辅助.md",
+    "0 Personals/个人知识管理/📁 2026-砍掉3套知识管理系统",
+    "0 Personals/个人知识管理/个人知识管理.md",
+    "0 Personals/个人知识管理",
+    "0 Personals/🏠 家庭网络架构.md",
+    "0 Personals/“耳一生”健康养生馆/“耳一生”健康养生馆.md",
+    "0 Personals/“耳一生”健康养生馆/🎧 耳夹养生馆.md",
+    "0 Personals/“耳一生”健康养生馆",
     "耳穴診斷知識庫/03-臨床應用",
-    "耳穴診斷知識庫/02-耳穴診斷方法/耳穴問診技巧.md",
-    "耳穴診斷知識庫/02-耳穴診斷方法/耳穴聞診方法.md",
-    "耳穴診斷知識庫/02-耳穴診斷方法/耳穴觸診技術.md",
-    "耳穴診斷知識庫/02-耳穴診斷方法/耳穴望診技術.md",
-    "耳穴診斷知識庫/02-耳穴診斷方法",
-    "耳穴診斷知識庫/01-基礎知識/耳穴診斷概論.md",
-    "耳穴診斷知識庫/README.md",
-    "耳穴診斷知識庫/10-日記",
-    "耳穴診斷知識庫/09-附件",
-    "耳穴診斷知識庫/08-模板",
-    "耳穴診斷知識庫/07-研究文獻",
-    "耳穴診斷知識庫/06-診斷標準",
-    "耳穴臨床案例",
-    "耳穴診斷知識庫/05-對應關係",
-    "耳穴診斷知識庫/04-臨床應用",
-    "3 Resources/测试资源.md",
-    "3 Resources/耳穴疗法知识库/README.md",
-    "Obsidian-OpenCode-Ollama-GPT集成指南/03-OpenCode集成/高级AI功能.md",
-    "3 Resources/耳穴疗法知识库/README 1.md",
-    "3 Resources/耳穴疗法知识库/10-日记/2026-01-21.md",
-    "3 Resources/耳穴疗法知识库/01-基础知识/耳穴疗法历史发展.md",
-    "3 Resources/耳穴疗法知识库/耳診知識.md",
-    "3 Resources/耳穴疗法知识库/01-基础知识/耳穴疗法概述.md",
-    "3 Resources/耳穴疗法知识库/01-基础知识/定义与原理.md",
-    "3 Resources/耳穴疗法知识库/02-耳穴定位/标准耳穴定位.md",
-    "3 Resources/耳穴疗法知识库/00-MOCs/MOC-耳穴定位.md",
-    "3 Resources/Obsidian/Obsidian.md",
-    "3 Resources/Obsidian/Obsidian 知識管理方法.md",
-    "3 Resources/3 Resources.md",
-    "3 Resources/工作技巧/Obsidian-OpenCode-Ollama-GPT集成指南/README.md",
-    "3 Resources/工作技巧/Obsidian-OpenCode-Ollama-GPT集成指南/08-高级应用/自动化.md",
-    "3 Resources/工作技巧/Obsidian-OpenCode-Ollama-GPT集成指南/07-故障排除/故障排除與維護.md",
-    "3 Resources/工作技巧/Obsidian-OpenCode-Ollama-GPT集成指南/06-工作流程/整合工作流.md",
-    "3 Resources/工作技巧/Obsidian-OpenCode-Ollama-GPT集成指南/01-环境准备/系统要求.md",
     "0 Personals/📥 00_InBox/2-素材/Pasted image 20260120043752.png",
     "0 Personals/📥 00_InBox/2-素材/Pasted image 20260120043302.png",
     "0 Personals/📥 00_InBox/2-素材/Pasted image 20260120042731.png",
