@@ -1,218 +1,229 @@
-This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
+# AI-value Knowledge Management System / AI-value 知识管理系统 / AI-value 知識管理系統
+
+This file provides guidance to Claude Code (claude.ai/code) when working with this repository.
+
+本文件为 Claude Code (claude.ai/code) 在此仓库中工作时提供指导。
+
+本文件為 Claude Code (claude.ai/code) 在此倉庫中工作時提供指導。
 
 ---
 
-## English / 简体中文 / 繁體中文
+## Quick Reference / 快速参考 / 快速參考
 
-### Project Purpose / 项目目的 / 專案目的
+| Category | Value / 值 / 值 |
+|----------|-----------------|
+| **PARA Structure** | `0 Personals` → `1 Projects` → `2 Areas` → `3 Resources` → `4 Archives` → `5 Zettels` |
+| **Key Commands** | `/para-库概览`, `/para-整理收集`, `/para-刷新缓存`, `/search`, `/obsidian` |
+| **File Format** | Markdown (`.md`) with YAML frontmatter and Obsidian syntax |
+| **Primary Tool** | Obsidian for markdown editing / Obsidian markdown 编辑器 / Obsidian markdown 編輯器 |
+| **License** | Apache 2.0 |
+| **Working Branch** | `main_para` |
 
-**AI-value** is a personal knowledge management system using PARA methodology (Projects, Areas, Resources, Archives). It's a markdown-based knowledge base with Obsidian integration, designed to organize information systematically.
+---
 
-**AI-value** 是一个基于 PARA 方法论（项目、领域、资源、归档）的个人知识管理系统。这是一个基于 Markdown 的知识库，集成了 Obsidian，旨在系统地组织信息。
+## Core Principles / 核心原则 / 核心原則
 
-**AI-value** 是一個基於 PARA 方法論（Projects, Areas, Resources, Archives）的個人知識管理系統。這是一個基於 Markdown 的知識庫，整合了 Obsidian，旨在系統地組織資訊。
+### 1. PARA Methodology / PARA 方法论 / PARA 方法論
 
-### Repository Information / 仓库信息 / 倉庫信息
+Organize information by **actionability** and **time horizon**:
 
-- **License:** Apache 2.0
-- **Remote:** https://github.com/kmjade/AI-value.git
-- **Primary branch:** `main`
-- **Working branch:** `main_para`
+根据 **可执行性** 和 **时间跨度** 组织信息：
 
-### Folder Structure / 文件夹结构 / 資料夾結構
+根據 **可執行性** 和 **時間跨度** 組織資訊：
 
-```
-AI-value/
-├── 0 Personals/
-│   └── 📥 00_InBox/    - 收件箱，临时收集内容
-├── 1 Projects/            - Short-term efforts with deadlines
-├── 2 Areas/               - Long-term responsibilities
-├── 3 Resources/           - Topics of ongoing interest
-├── 4 Archives/            - Completed/inactive items
-├── 5 Zettels/            - 原子化笔记 (Zettelkasten)
-├── _Template/             - PARA templates
-├── _meta/                - System metadata and configuration
-├── .claude/              - Claude Code configuration
-├── .obsidian/            - Obsidian plugin settings
-└── .idea/               - IntelliJ IDEA settings (gitignored)
-```
+| Category | Description / 描述 | 描述 |
+|----------|-------------------|------|
+| **Projects** (`1 Projects/`) | Active, short-term endeavors with deadlines / 有期限的活跃短期项目 / 有期限的活躍短期專案 |
+| **Areas** (`2 Areas/`) | Long-term responsibilities / 长期责任 / 長期責任 |
+| **Resources** (`3 Resources/`) | Topics of ongoing interest / 持续感兴趣的主题 / 持續感興趣的主題 |
+| **Archives** (`4 Archives/`) | Completed or inactive items / 已完成或非活跃项目 / 已完成或非活躍專案 |
 
-**PARA Methodology:**
-- **Projects** (`1 Projects/`): Active, short-term endeavors with deadlines
-- **Areas** (`2 Areas/`): Ongoing responsibilities and areas of responsibility
-- **Resources** (`3 Resources/`): Topics of interest and reference material
-- **Archives** (`4 Archives/`): Completed projects and inactive items
+**Extended Structure / 扩展结构 / 擴展結構:**
+- **InBox** (`0 Personals/📥 00_InBox/`): Temporary collection for quick capture / 临时收集区 / 臨時收集區
+- **Zettels** (`5 Zettels/`): Atomic notes for knowledge networking / 原子化笔记系统 / 原子化筆記系統
+  - `💡 fleeting/` - Quick thoughts / 闪念笔记 / 閃念筆記
+  - `📌 permanent/` - Knowledge atoms / 永久笔记 / 永久筆記
+  - `📚 literature/` - Research notes / 文献笔记 / 文獻筆記
+  - `📁 structure/` - System notes / 结构笔记 / 結構筆記
 
-**Extended Structure:**
-- **InBox** (`0 Personals/📥 00_InBox/`): Temporary collection for quick capture
-- **Zettels** (`6 Zettels/`): Atomic notes system for knowledge networking
-
-### Claude Code Commands / Claude Code 指令
-
-Commands are located in `.claude/commands/` and invoked with `/command-name`.
-
-#### PARA Management Commands
-
-| Command | File | Purpose |
-|---------|------|---------|
-| `/para-库概览` | `para-库概览.md` | Display PARA library overview and statistics |
-| `/para-整理收集` | `para-整理收集.md` | Organize InBox contents by PARA principles |
-
-**Usage Examples:**
+### 2. Workflow / 工作流 / 工作流
 
 ```
-/para-库概览
-# Output:
-# 📊 PARA 库概览
-#
-# | 文件夹 | 文件数 | 状态 |
-# |--------|--------|------|
-# | 0 Personals/📥 00_InBox | X | ⚠️ 需要整理 / ✅ 已清空 |
-# | 1 Projects | X | |
-# | 2 Areas | X | |
-# | 3 Resources | X | |
-# | 4 Archives | X | |
-# | 5 Zettels | X | |
-#
-# 📁 进行中的项目 (1 Projects)：
-# - 公众号
-# - AI日报
+Daily: Capture → Organize → Review
+Weekly: Process InBox, Refresh cache
+Monthly: Deep clean Archives
 ```
 
-```
-/para-整理收集
-# Output:
-# 📥 整理收件箱
-#
-# 发现 X 个待处理笔记：
-# 1. "学习笔记.md"
-#    - 建议: 🗂️ Resource → [[AI]]
-#    - 动作: [归档] [跳过] [编辑]
-```
+**PARA Workflow / PARA 工作流 / PARA 工作流:**
+1. **Capture / 收集**: Add to `0 Personals/📥 00_InBox/`
+2. **Organize / 整理**: Use `/para-整理收集` to process by PARA
+3. **Review / 复盘**: Use `/para-库概览` to check status
+4. **Archive / 归档**: Move completed items to `4 Archives/`
 
-#### Helper Commands
+**Zettelkasten Workflow / 卡片盒工作流 / 卡片盒工作流:**
+1. Create atomic notes in `5 Zettels/` / 创建原子笔记 / 建立原子筆記
+2. Link using wikilinks `[[Note]]` / 使用 wikilinks 链接 / 使用 wikilinks 連結
+3. Use unique IDs (`YYYYMMDD-XXXX`) / 使用唯一 ID / 使用唯一 ID
+4. Connect to PARA categories as needed / 按需连接到 PARA / 按需連結到 PARA
 
-| Command | File | Purpose |
-|---------|------|---------|
-| `/创建指令` | `创建指令.md` | Create new Claude Code commands |
-| `/创建技能` | `创建技能.md` | Create new Claude Code skills (calls skill-creator) |
-| `/claudian` | `claudian.md` | Claude-specific PARA management commands |
-| `/obsidian` | `obsidian.md` | Auto-select appropriate Obsidian skill |
+### 3. File Standards / 文件标准 / 檔案標準
 
-### Claude Code Skills / Claude Code 技能
+| Aspect / 方面 / 方面 | Standard / 标准 / 標準 |
+|----------------------|-----------------------|
+| **Naming** | Descriptive, use spaces / 描述性，使用空格 / 描述性，使用空格 |
+| **Format** | Markdown (`.md`) + YAML frontmatter |
+| **Links** | Relative wikilinks only: `[[Note]]` / 仅使用相对 wikilinks / 僅使用相對 wikilinks |
+| **Paths** | From vault root: `1 Projects/note.md` / 从 vault root 开始 / 從 vault root 開始 |
+| **Templates** | Use `_template-` prefix / 使用 `_template-` 前缀 / 使用 `_template-` 前綴 |
+| **Zettels** | Use emoji prefixes: `💡`, `📌`, `📚`, `📁` |
 
-Skills are located in `.claude/skills/` and are automatically triggered or manually invoked based on context.
-
-#### Available Skills
-
-| Skill | Description | Use When |
-|-------|-------------|----------|
-| **obsidian-markdown** | Create/edit Obsidian Flavored Markdown with wikilinks, embeds, callouts, properties | Working with `.md` files, wikilinks `[[Note]]`, frontmatter, callouts, tags |
-| **obsidian-bases** | Create/edit Obsidian Bases (.base) with views, filters, formulas | Creating database views, tables, cards, formulas |
-| **json-canvas** | Create/edit JSON Canvas files (.canvas) with nodes, edges | Creating mind maps, flowcharts, visual canvases |
-
-**Automatic Skill Selection:**
-
-The `/obsidian` command automatically selects the appropriate skill:
-- `.md` files → `obsidian-markdown`
-- `.base` files → `obsidian-bases`
-- `.canvas` files → `json-canvas`
-
-### Obsidian-Specific Syntax
-
-#### Wikilinks / internal links
-
-```markdown
-[[Note Name]]
-[[Note Name|Display Text]]
-[[Note Name#Heading]]
-[[Note Name#^block-id]]
-![[Embedded Note]]
-```
-
-#### Callouts / 提示块
-
-```markdown
-> [!note] Note
-> [!info] Info
-> [!tip] Tip
-> [!warning] Warning
-> [!faq]- Collapsible
-> [!todo]-+ Expanded by default
-```
-
-#### Properties / Frontmatter / 属性
+### 4. Metadata Standards / 元数据标准 / 元數據標準
 
 ```yaml
 ---
-title: My Note
+title: Note Title / 笔记标题 / 筆記標題
 date: 2024-01-15
-tags:
-  - project
-  - important
+tags: [category, topic]
+para: projects  # or: areas, resources, archives
 status: in-progress
-priority: high
+language: en  # or: zh-cn, zh-tw
 ---
 ```
 
-#### Embeds / 嵌入
+---
 
-```markdown
-![[Note Name#Heading]]
-![[image.png|640x480]]
-![[document.pdf#page=3]]
+## Skills Index / Skills 索引 / Skills 索引
+
+Comprehensive knowledge modules are available in `.claude/skills/`:
+
+`.claude/skills/` 中提供全面的知识模块：
+
+`.claude/skills/` 中提供全面的知識模組：
+
+| Skill | Directory | Description / 描述 | 描述 | Use When / 何时使用 / 何時使用 |
+|-------|-----------|-------------------|------|------------------------------|
+| **para-methodology** | `.claude/skills/para-methodology/` | PARA structure, workflow, metadata / PARA 结构、工作流、元数据 / PARA 結構、工作流、元數據 | Working with PARA organization / 处理 PARA 组织 / 處理 PARA 組織 |
+| **obsidian-syntax** | `.claude/skills/obsidian-syntax/` | Wikilinks, callouts, properties, embeds / Wikilinks、提示块、属性、嵌入 / Wikilinks、提示塊、屬性、嵌入 | Editing markdown files / 编辑 markdown 文件 / 編輯 markdown 檔案 |
+| **repo-context** | `.claude/skills/repo-context/` | Repository structure, paths, Git info / 仓库结构、路径、Git 信息 / 倉庫結構、路徑、Git 資訊 | Understanding the repository / 理解仓库 / 理解倉庫 |
+| **markdown-standards** | `.claude/skills/markdown-standards/` | File naming, multilingual support, conventions / 文件命名、多语言支持、规范 / 檔案命名、多語言支援、規範 | Creating or organizing files / 创建或组织文件 / 建立或組織檔案 |
+| **claude-commands** | `.claude/skills/claude-commands/` | Command usage and workflows / 指令使用和工作流 / 指令使用和工作流 | Using Claude Code commands / 使用 Claude Code 指令 / 使用 Claude Code 指令 |
+| **zettelkasten-workflow** | `.claude/skills/zettelkasten-workflow/` | Atomic notes, linking, unique IDs / 原子笔记、链接、唯一 ID / 原子筆記、連結、唯一 ID | Working with Zettelkasten system / 使用 Zettelkasten 系统 / 使用 Zettelkasten 系統 |
+
+### Built-in Obsidian Skills / 内置 Obsidian 技能 / 內建 Obsidian 技能
+
+| Skill | File Types / 文件类型 / 檔案類型 | Description / 描述 | 描述 |
+|-------|-------------------------------|-------------------|------|
+| **obsidian-markdown** | `.md` | Obsidian Flavored Markdown with wikilinks, callouts, properties / 带 wikilinks、提示块、属性的 Obsidian 增强版 Markdown / 帶 wikilinks、提示塊、屬性的 Obsidian 增強版 Markdown |
+| **obsidian-bases** | `.base` | Database views, tables, cards, formulas / 数据库视图、表格、卡片、公式 / 資料庫視圖、表格、卡片、公式 |
+| **json-canvas** | `.canvas` | Mind maps, flowcharts, visual canvases / 思维导图、流程图、可视化画布 / 思維導圖、流程圖、視覺化畫布 |
+
+> [!tip] Tip / 提示 / 提示
+> Use `/obsidian` to automatically select the appropriate skill based on file type.
+> 使用 `/obsidian` 根据文件类型自动选择合适的技能。
+> 使用 `/obsidian` 根據檔案類型自動選擇合適的技能。
+
+---
+
+## Quick Reference Links / 快速参考链接 / 快速參考連結
+
+### Commands / 指令 / 指令
+
+| Command | Purpose / 用途 | 用途 | Skill / 技能 / 技能 |
+|---------|---------------|------|-------------------|
+| `/para-库概览` | Display PARA library overview / 显示 PARA 库概览 / 顯示 PARA 庫概覽 | [claude-commands](.claude/skills/claude-commands/SKILL.md) |
+| `/para-整理收集` | Organize InBox by PARA / 按 PARA 整理收件箱 / 按 PARA 整理收件箱 | [claude-commands](.claude/skills/claude-commands/SKILL.md) |
+| `/para-刷新缓存` | Update cache files / 更新缓存文件 / 更新快取檔案 | [claude-commands](.claude/skills/claude-commands/SKILL.md) |
+| `/search` | Search content / 搜索内容 / 搜尋內容 | [claude-commands](.claude/skills/claude-commands/SKILL.md) |
+| `/obsidian` | Auto-select Obsidian skill / 自动选择 Obsidian 技能 / 自動選擇 Obsidian 技能 | [claude-commands](.claude/skills/claude-commands/SKILL.md) |
+| `/claudian` | PARA assistant menu / PARA 助手菜单 / PARA 助手選單 | [claude-commands](.claude/skills/claude-commands/SKILL.md) |
+| `/创建指令` | Create new command / 创建新指令 / 創建新指令 | [claude-commands](.claude/skills/claude-commands/SKILL.md) |
+| `/创建技能` | Create new skill / 创建新技能 / 創建新技能 | [claude-commands](.claude/skills/claude-commands/SKILL.md) |
+
+### Syntax Reference / 语法参考 / 語法參考
+
+| Feature / 功能 / 功能 | Example / 示例 / 範例 | Skill / 技能 / 技能 |
+|--------------------|-------------------|-------------------|
+| **Wikilink** | `[[Note]]` / `[[Note\|Display]]` | [obsidian-syntax](.claude/skills/obsidian-syntax/SKILL.md) |
+| **Embed** | `![[Note]]` / `![[image.png\|300x200]]` | [obsidian-syntax](.claude/skills/obsidian-syntax/SKILL.md) |
+| **Callout** | `> [!note] Title` | [obsidian-syntax](.claude/skills/obsidian-syntax/SKILL.md) |
+| **Properties** | YAML frontmatter with `---` | [obsidian-syntax](.claude/skills/obsidian-syntax/SKILL.md) |
+| **Block Reference** | `[[Note#^block-id]]` | [obsidian-syntax](.claude/skills/obsidian-syntax/SKILL.md) |
+
+### Common Tasks / 常见任务 / 常見任務
+
+| Task / 任务 / 任務 | Action / 行动 / 行動 | Reference / 参考 / 參考 |
+|------------------|-------------------|-------------------|
+| **Create new note** | Use templates from `_Template/` | [markdown-standards](.claude/skills/markdown-standards/SKILL.md) |
+| **Organize InBox** | Use `/para-整理收集` | [para-methodology](.claude/skills/para-methodology/SKILL.md) |
+| **Check library status** | Use `/para-库概览` | [para-methodology](.claude/skills/para-methodology/SKILL.md) |
+| **Create Zettel** | Use unique ID `YYYYMMDD-XXXX` | [zettelkasten-workflow](.claude/skills/zettelkasten-workflow/SKILL.md) |
+| **Link notes** | Use wikilinks `[[Note]]` | [obsidian-syntax](.claude/skills/obsidian-syntax/SKILL.md) |
+| **Find content** | Use `/search` | [claude-commands](.claude/skills/claude-commands/SKILL.md) |
+| **Improve performance** | Use `/para-刷新缓存` | [claude-commands](.claude/skills/claude-commands/SKILL.md) |
+
+---
+
+## Repository Context / 仓库上下文 / 倉庫上下文
+
+### Key Information / 关键信息 / 關鍵資訊
+
+| Item / 项目 / 項目 | Value / 值 / 值 |
+|-------------------|-----------------|
+| **Repository** | AI-value Personal Knowledge Management System |
+| **Remote URL** | https://github.com/kmjade/AI-value.git |
+| **Primary branch** | `main` |
+| **Working branch** | `main_para` |
+| **License** | Apache 2.0 |
+| **Vault Path** | `D:\Knowledge\AI-value` |
+| **Languages** | English, Simplified Chinese (简体中文), Traditional Chinese (繁體中文) |
+
+### Path Rules / 路径规则 / 路徑規則
+
+| Context / 上下文 / 上下文 | Rule / 规则 / 規則 | Example / 示例 / 範例 |
+|--------------------------|------------------|-------------------|
+| **Vault files** | Use relative paths from vault root / 使用从 vault root 开始的相对路径 / 使用從 vault root 開始的相對路徑 | `1 Projects/note.md` ✅ <br> `/1 Projects/note.md` ❌ |
+| **Export paths** | Write-only: `~/Desktop`, `~/Downloads` | `pandoc ./note.md -o ~/Desktop/output.docx` |
+| **External contexts** | Full read/write access (when enabled) | `/absolute/path/to/context` |
+
+---
+
+## Getting Started / 快速开始 / 快速開始
+
+### New to AI-value? / AI-value 新手？ / AI-value 新手？
+
+1. **Read the PARA methodology** / 阅读 PARA 方法论 / 閱讀 PARA 方法論: [[.claude/skills/para-methodology/SKILL.md]]
+2. **Learn Obsidian syntax** / 学习 Obsidian 语法 / 學習 Obsidian 語法: [[.claude/skills/obsidian-syntax/SKILL.md]]
+3. **Start capturing** / 开始捕获 / 開始捕獲: Add notes to `0 Personals/📥 00_InBox/`
+4. **Organize regularly** / 定期整理 / 定期整理: Use `/para-整理收集` daily
+5. **Review progress** / 审查进度 / 審查進度: Use `/para-库概览` weekly
+
+### Daily Workflow / 每日工作流 / 每日工作流
+
+```bash
+# Morning routine / 早晨例程 / 早晨例程
+/para-库概览          # Check status / 检查状态 / 檢查狀態
+/obsidian             # Load appropriate skill / 加载合适的技能 / 加載合適的技能
+
+# Work / 工作 / 工作
+/capture ideas → InBox # Capture to InBox / 捕获到 InBox / 捕獲到 InBox
+
+# Evening / 晚上 / 晚上
+/para-整理收集         # Process InBox / 处理收件箱 / 處理收件箱
 ```
 
-### Development Notes / 开发说明 / 開發說明
+---
 
-This is a documentation/note repository, not a code project. Key considerations:
+## Need Help? / 需要帮助？/ 需要幫助？
 
-- **No build system**: No npm, make, or other build commands needed
-- **No tests**: No automated testing framework
-- **No linting**: No code linting tools configured
-- **File format**: Markdown (`.md`) with YAML frontmatter
-- **Primary tool**: Use Obsidian for markdown editing with full syntax support
+| Question / 问题 / 問題 | Reference / 参考 / 參考 |
+|----------------------|-------------------|
+| How to organize notes? | [[.claude/skills/para-methodology/SKILL.md\|PARA Methodology]] |
+| How to format markdown? | [[.claude/skills/obsidian-syntax/SKILL.md\|Obsidian Syntax]] |
+| How to name files? | [[.claude/skills/markdown-standards/SKILL.md\|Markdown Standards]] |
+| What commands are available? | [[.claude/skills/claude-commands/SKILL.md\|Claude Commands]] |
+| How to use Zettelkasten? | [[.claude/skills/zettelkasten-workflow/SKILL.md\|Zettelkasten Workflow]] |
 
-**When editing markdown files:**
-- Use `obsidian-markdown` skill for proper syntax
-- Preserve YAML frontmatter for properties
-- Use wikilinks `[[Note]]` for internal linking
-- Use callouts for emphasized content
-- Respect PARA folder structure
-
-**Metadata Standards:**
-| Category | para value |
-|----------|-----------|
-| Projects | `projects` |
-| Areas | `areas` |
-| Resources | `resources` |
-| Archives | `archives` |
-
-**Multilingual Support:**
-Documentation is maintained in three languages:
-- English
-- Simplified Chinese (简体中文)
-- Traditional Chinese (繁體中文)
-
-When creating new documentation, maintain consistency with existing multilingual patterns.
-
-### PARA Workflow
-
-1. **Capture**: Add new information to `0 Personals/📥 00_InBox/`
-2. **Organize**: Use `/para-整理收集` to organize InBox contents
-3. **Review**: Use `/para-库概览` to review library status
-4. **Archive**: Move completed items to `4 Archives/`
-
-**Zettelkasten Workflow:**
-1. Create atomic notes in `5 Zettels/`
-2. Link related concepts using wikilinks
-3. Use unique IDs for reference
-4. Connect to PARA categories as needed
-
-### File Naming Conventions
-
-- Use descriptive names
-- Avoid special characters that break links
-- Use spaces (Obsidian handles them well in wikilinks)
-- For multilingual content, keep original language names
-- Template files use `_template-` prefix
+> [!info] Note / 注意 / 注意
+> All skills are located in `.claude/skills/` and contain detailed documentation in three languages.
+> 所有技能都位于 `.claude/skills/` 中，包含三种语言的详细文档。
+> 所有技能都位於 `.claude/skills/` 中，包含三種語言的詳細文件。
