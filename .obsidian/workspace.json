@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "3 Resources/Obsidian-耳穴疗法知识库/00-MOCs/MOC-耳穴定位.md",
+                "file": "3 Resources/耳穴疗法知识库/README 1.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,133 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "MOC-耳穴定位"
+              "title": "README 1"
+            }
+          },
+          {
+            "id": "3ceb7dd168a16af0",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "3 Resources/工作技巧/PKM/AI 时代知识管理思维.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "AI 时代知识管理思维"
+            }
+          },
+          {
+            "id": "badca7d533c79ca0",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "3 Resources/Claudian/Obsidian + Claudian 集成方案.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "Obsidian + Claudian 集成方案"
+            }
+          },
+          {
+            "id": "d3fe74368e306651",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "2 Areas/Claudian/Claudian 命令体系.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "Claudian 命令体系"
+            }
+          },
+          {
+            "id": "cd7025e153bdc1b1",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "3 Resources/工作技巧/Obsidian-OpenCode-Ollama-GPT集成指南/README.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "README"
+            }
+          }
+        ]
+      },
+      {
+        "id": "00b72e319e60c6d9",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "944b5e40f674e3bd",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "3 Resources/耳穴疗法知识库/耳診知識.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "耳診知識"
             }
           }
         ]
@@ -207,42 +333,42 @@
   },
   "active": "6d97916435a7249c",
   "lastOpenFiles": [
-    "3 Resources/Obsidian-耳穴疗法知识库/03-刺激方法/王不留行籽贴压技术.md",
-    "3 Resources/Obsidian-耳穴疗法知识库/04-临床应用/失眠症耳穴治疗方案.md",
-    "3 Resources/Obsidian-耳穴疗法知识库/07-实践指南/标签系统使用指南.md",
-    "3 Resources/Obsidian-耳穴疗法知识库/08-模板/MOC模板.md",
-    "2 Areas/111.md",
-    "3 Resources/Obsidian-耳穴疗法知识库/08-模板/治疗方案模板.md",
-    "3 Resources/Obsidian-耳穴疗法知识库/10-日记/2026-01-21.md",
-    "3 Resources/Obsidian-耳穴疗法知识库/01-基础知识/耳穴疗法概述.md",
-    "3 Resources/Obsidian-耳穴疗法知识库/00-MOCs/MOC-临床应用.md",
-    "3 Resources/Obsidian-耳穴疗法知识库/00-MOCs/MOC-基础知识.md",
-    "3 Resources/Obsidian-耳穴疗法知识库/00-MOCs/MOC-耳穴定位.md",
-    "0 Personals/📥 00_InBox/test-skill-load-2.md",
-    "0 Personals/0 Personals.md",
-    "3 Resources/健康知识体系/健康知识体系.md",
-    "0 Personals/📥 Inbox Dashboard.md",
-    "0 Personals/📥 00_InBox/📖 [渐进] 如何远程管理二级路由器.md",
-    "0 Personals/📥 00_InBox/📖 [渐进] Google Gemini 模型概览.md",
-    "0 Personals/📥 00_InBox/tmpclaude-24a6-cwd",
-    "0 Personals/📥 00_InBox/obsidian-local-rest-api.md",
-    "0 Personals/📥 00_InBox/收件箱清理总结.md",
-    "0 Personals/📥 00_InBox/视频列表.md",
-    "0 Personals/📥 00_InBox/宽带突然变卡、被限速，前运营商员工教你怎么办！.md",
-    "0 Personals/📥 00_InBox/传统界面路由器-如何远程管理二级路由器？.md",
-    "0 Personals/📥 00_InBox/Obsidian+AI=让所有app听你指挥.md",
-    "0 Personals/📥 00_InBox/Obsidian 终极玩法：打造你的 AI 指挥中心 (Smart Composer + MCP).md",
-    "0 Personals/📥 00_InBox/obsidian skills+Claude Code 零基础小白攻略1：从安装到跑起来，最短路径全在这.md",
-    "0 Personals/📥 00_InBox/Obsidian +Claudian  搭建AI 时代下最好的知识管理方案.md",
-    "0 Personals/📥 00_InBox/已处理",
-    "0 Personals/📥 00_InBox/OpenCode+Ollama集成指南/配置文件/opencodeHelper.js",
-    "0 Personals/📥 00_InBox/OpenCode+Ollama集成指南/配置文件/opencode.json",
-    "0 Personals/📥 00_InBox/OpenCode+Ollama集成指南/配置文件/opencode-ollama.quickadd.json",
-    "0 Personals/📥 00_InBox/OpenCode+Ollama集成指南/资源附件/install-opencode-ollama.sh",
-    "0 Personals/📥 00_InBox/OpenCode+Ollama集成指南/示例项目/Python示例",
-    "0 Personals/📥 00_InBox/OpenCode+Ollama集成指南/示例项目/JavaScript示例",
-    "0 Personals/📥 00_InBox/OpenCode+Ollama集成指南/配置文件",
-    "0 Personals/📥 00_InBox/OpenCode+Ollama集成指南/资源附件",
+    "耳穴診斷知識庫/03-臨床應用/心血管疾病耳穴診斷.md",
+    "耳穴診斷知識庫/03-臨床應用",
+    "耳穴診斷知識庫/02-耳穴診斷方法/耳穴問診技巧.md",
+    "耳穴診斷知識庫/02-耳穴診斷方法/耳穴聞診方法.md",
+    "耳穴診斷知識庫/02-耳穴診斷方法/耳穴觸診技術.md",
+    "耳穴診斷知識庫/02-耳穴診斷方法/耳穴望診技術.md",
+    "耳穴診斷知識庫/02-耳穴診斷方法",
+    "耳穴診斷知識庫/01-基礎知識/耳穴診斷概論.md",
+    "耳穴診斷知識庫/README.md",
+    "耳穴診斷知識庫/10-日記",
+    "耳穴診斷知識庫/09-附件",
+    "耳穴診斷知識庫/08-模板",
+    "耳穴診斷知識庫/07-研究文獻",
+    "耳穴診斷知識庫/06-診斷標準",
+    "耳穴臨床案例",
+    "耳穴診斷知識庫/05-對應關係",
+    "耳穴診斷知識庫/04-臨床應用",
+    "3 Resources/测试资源.md",
+    "3 Resources/耳穴疗法知识库/README.md",
+    "Obsidian-OpenCode-Ollama-GPT集成指南/03-OpenCode集成/高级AI功能.md",
+    "3 Resources/耳穴疗法知识库/README 1.md",
+    "3 Resources/耳穴疗法知识库/10-日记/2026-01-21.md",
+    "3 Resources/耳穴疗法知识库/01-基础知识/耳穴疗法历史发展.md",
+    "3 Resources/耳穴疗法知识库/耳診知識.md",
+    "3 Resources/耳穴疗法知识库/01-基础知识/耳穴疗法概述.md",
+    "3 Resources/耳穴疗法知识库/01-基础知识/定义与原理.md",
+    "3 Resources/耳穴疗法知识库/02-耳穴定位/标准耳穴定位.md",
+    "3 Resources/耳穴疗法知识库/00-MOCs/MOC-耳穴定位.md",
+    "3 Resources/Obsidian/Obsidian.md",
+    "3 Resources/Obsidian/Obsidian 知識管理方法.md",
+    "3 Resources/3 Resources.md",
+    "3 Resources/工作技巧/Obsidian-OpenCode-Ollama-GPT集成指南/README.md",
+    "3 Resources/工作技巧/Obsidian-OpenCode-Ollama-GPT集成指南/08-高级应用/自动化.md",
+    "3 Resources/工作技巧/Obsidian-OpenCode-Ollama-GPT集成指南/07-故障排除/故障排除與維護.md",
+    "3 Resources/工作技巧/Obsidian-OpenCode-Ollama-GPT集成指南/06-工作流程/整合工作流.md",
+    "3 Resources/工作技巧/Obsidian-OpenCode-Ollama-GPT集成指南/01-环境准备/系统要求.md",
     "0 Personals/📥 00_InBox/2-素材/Pasted image 20260120043752.png",
     "0 Personals/📥 00_InBox/2-素材/Pasted image 20260120043302.png",
     "0 Personals/📥 00_InBox/2-素材/Pasted image 20260120042731.png",
