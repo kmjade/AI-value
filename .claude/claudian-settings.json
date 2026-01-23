@@ -40,7 +40,7 @@
   },
   "permissionMode": "yolo",
   "model": "haiku",
-  "thinkingBudget": "off",
+  "thinkingBudget": "xhigh",
   "enableAutoTitleGeneration": true,
   "titleGenerationModel": "",
   "excludedTags": [],
@@ -66,7 +66,7 @@
     "windows": ""
   },
   "loadUserClaudeSettings": true,
-  "activeConversationId": "conv-1768942026917-5si2l1ob9",
+  "activeConversationId": "conv-1769023118421-8laisfl5v",
   "lastClaudeModel": "haiku",
   "lastCustomModel": "",
   "lastEnvHash": ""
